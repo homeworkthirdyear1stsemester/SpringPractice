@@ -8,6 +8,8 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 
+    <!-- load the properties file : sport.properties -->
+    <context:property-placeholder location="classpath:sport.properties"/>
     <!-- Define your beans here -->
 
     <!-- define the dependency -->
@@ -20,11 +22,16 @@
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortuneService"/>
     </bean>
+
     <bean id="myCricketCoach"
           class="com.kkh.springdemo.CricketCoach">
         <!--set up setter injection-->
         <!--name and setFortunService equal-->
         <property name="fortuneService" ref="myFortuneService"/>
+
+        <!-- inject literal values -->
+        <property name="emailAddress" value="${foo.email}"/>
+        <property name="team" value="${foo.team}"/>
     </bean>
 </beans>
 
