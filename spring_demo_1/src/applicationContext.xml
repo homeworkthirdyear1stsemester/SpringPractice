@@ -16,9 +16,9 @@
     </bean>
 
     <bean id="myCoach"
-          class="com.kkh.springdemo.BaseballCoach">
+          class="com.kkh.springdemo.TrackCoach">
         <!-- set up constructor injection -->
-        <constructor-arg ref="myFortune" />
+        <constructor-arg ref="myFortune"/>
     </bean>
 </beans>
 
