@@ -14,6 +14,9 @@
     <bean id="myCoach"
           class="com.kkh.springdemo.TrackCoach">
     </bean>
+    <bean id="baseballCoach"
+          class="com.kkh.springdemo.BaseballCoach">
+    </bean>
 </beans>
 
 
