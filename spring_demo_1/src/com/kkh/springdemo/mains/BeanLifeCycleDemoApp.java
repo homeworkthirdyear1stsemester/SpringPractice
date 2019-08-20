@@ -20,6 +20,8 @@ public class BeanLifeCycleDemoApp {
 
         /*
         만약 xml에 bean의 scope를 prototype로 설정 할 경우 init은 호출 되지만 destory는 호출 되지 않는다.
+        singleton : init + destory
+        prototype : init
          */
     }
 }
