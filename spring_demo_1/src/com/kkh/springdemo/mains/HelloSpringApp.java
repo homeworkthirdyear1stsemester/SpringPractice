@@ -1,5 +1,6 @@
-package com.kkh.springdemo;
+package com.kkh.springdemo.mains;
 
+import com.kkh.springdemo.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringApp {

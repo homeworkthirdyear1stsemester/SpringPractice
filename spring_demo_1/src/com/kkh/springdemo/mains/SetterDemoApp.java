@@ -1,5 +1,6 @@
-package com.kkh.springdemo;
+package com.kkh.springdemo.mains;
 
+import com.kkh.springdemo.CricketCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SetterDemoApp {

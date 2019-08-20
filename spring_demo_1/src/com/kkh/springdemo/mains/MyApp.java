@@ -1,4 +1,4 @@
-package com.kkh.springdemo;
+package com.kkh.springdemo.mains;
 
 public class MyApp {
     public static void main(String[] args) {
