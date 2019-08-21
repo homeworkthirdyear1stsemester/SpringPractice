@@ -1,6 +1,7 @@
 package com.kkh.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,6 +9,7 @@ public class TennisCoach implements Coach {
 
     // filed 변수에 자동으로 bean에서 찾아서 inject 해준다
     @Autowired
+    @Qualifier("happyFortuneService")
     private FortuneService fortuneService;
 
     // define  a default constructor
