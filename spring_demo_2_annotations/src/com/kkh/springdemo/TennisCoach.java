@@ -9,7 +9,7 @@ public class TennisCoach implements Coach {
 
     // filed 변수에 자동으로 bean에서 찾아서 inject 해준다
     @Autowired
-    @Qualifier("happyFortuneService") // bean id 에 맞는 해당 객체에 injection이 일어난다
+    @Qualifier("randomFortuneService") // bean id 에 맞는 해당 객체에 injection이 일어난다
     private FortuneService fortuneService;
 
     // define  a default constructor
