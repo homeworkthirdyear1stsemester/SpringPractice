@@ -2,9 +2,11 @@ package com.kkh.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype") // create new instance everytime
 public class TennisCoach implements Coach {
 
     // filed 변수에 자동으로 bean에서 찾아서 inject 해준다
