@@ -32,13 +32,15 @@ public class TennisCoach implements Coach {
         return this.fortuneService.getFortune();
     }
 
+    // define my init method
     @PostConstruct
     public void doSomethingAfterConstructor() {
-        System.out.println("do something after constructor!!!");
+        System.out.println(">> TennisCoach : inside of doSomethingAfterConstructor()");
     }
 
+    // define my destroy method
     @PreDestroy
-    public void doSomethingBeforeDestory() {
-        System.out.println("do something before destory!!!");
+    public void doSomethingBeforeDestroy() {
+        System.out.println(">> TennisCoach : inside of doSomethingBeforeDestroy()");
     }
 }
