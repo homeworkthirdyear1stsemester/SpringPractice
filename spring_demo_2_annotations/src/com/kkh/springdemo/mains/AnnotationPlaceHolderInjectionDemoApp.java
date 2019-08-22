@@ -12,7 +12,7 @@ public class AnnotationPlaceHolderInjectionDemoApp {
 
         // get the bean from spring container
         TrackCoach theCoach = context.getBean("trackCoach", TrackCoach.class);
-        // default id로 생서
+        // default id로 생성
 
         // get the properties values
         System.out.println(theCoach.getTeamName());
