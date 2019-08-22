@@ -5,8 +5,11 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
-@Scope("prototype") // create new instance everytime
+//@Scope("prototype") // create new instance everytime
 public class TennisCoach implements Coach {
 
     // filed 변수에 자동으로 bean에서 찾아서 inject 해준다
@@ -27,5 +30,15 @@ public class TennisCoach implements Coach {
     @Override
     public String getDailyFortune() {
         return this.fortuneService.getFortune();
+    }
+
+    @PostConstruct
+    public void doSomethingAfterConstructor() {
+        System.out.println("do something after constructor!!!");
+    }
+
+    @PreDestroy
+    public void doSomethingBeforeDestory() {
+        System.out.println("do something before destory!!!");
     }
 }
