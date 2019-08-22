@@ -1,11 +1,12 @@
 package com.kkh.springdemo;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan("com.kkh.springdemo") // 해당 package에서 default scope를 전부 객체를 생성 하게 된다
+// @ComponentScan("com.kkh.springdemo") // 해당 package에서 default scope를 전부 객체를 생성 하게 된다
+@PropertySource("classpath:sport.properties") // src 에 있는 파일을 읽어 드린 것이다.
 public class SportConfig {
 
     // define bean for our sad fortune service
