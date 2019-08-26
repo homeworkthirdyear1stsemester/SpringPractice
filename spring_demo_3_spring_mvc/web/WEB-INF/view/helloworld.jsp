@@ -16,5 +16,9 @@ Hello World of Spring!
 <br/><br/>
 Student name : ${param.studentName}
 
+<br/><br/>
+The message : ${message}
+<!-- attribute의 message라는 이름을 가지고있는 value를 나타냄 -->
+
 </body>
 </html>
