@@ -13,5 +13,7 @@
 <body>
 The Student is confirmed : ${student.firstName} ${student.lastName}
 <!-- getter를 호출 한다 -->
+<br/><br/>
+Country : ${student.country}
 </body>
 </html>

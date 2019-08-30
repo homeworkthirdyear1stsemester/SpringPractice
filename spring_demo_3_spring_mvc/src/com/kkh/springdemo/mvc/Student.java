@@ -4,8 +4,17 @@ public class Student {
 
     private String firstName;
     private String lastName;
+    private String country;
 
     public Student() {
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getCountry() {
+        return this.country;
     }
 
     public void setFirstName(String firstName) {

@@ -20,6 +20,15 @@
     Last name : <form:input path="lastName"/>
     <br/><br/>
 
+    Country:
+    <form:select path="country">
+        <form:option value="Korea" label="Korea"/>
+        <form:option value="Brazil" label="Brazil"/>
+        <form:option value="Germany" label="Germany"/>
+        <form:option value="France" label="France"/>
+    </form:select>
+    <br/><br/>
+
     <input type="submit" value="Submit"/>
 </form:form>
 <!-- path에 이름에 set을 mapping해서 넣어준다 -->
