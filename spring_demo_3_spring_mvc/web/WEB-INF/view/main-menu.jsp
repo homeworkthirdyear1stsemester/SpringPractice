@@ -9,7 +9,7 @@
 <h2>Spring MVC Demo - Home Page</h2>
 <hr>
 
-<a href="showForm">Hellow World form</a>
+<a href="hello/showForm">Hellow World form</a>
 
 <br><br>
 

@@ -8,16 +8,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping("/hello") // parent mapping to resolve conflict
 public class HelloWorldController {
 
     // need a controller method to show the initial HTML form
-    @RequestMapping("/showForm")
+    @RequestMapping("/showForm") // sub mapping
     public String showForm() {
         return "helloworld-form";
     }
 
     // need a controller method to process the HTML form
-    @RequestMapping("/processForm")
+    @RequestMapping("/processForm") // sub mapping
     public String processForm() {
         return "helloworld";
     }
