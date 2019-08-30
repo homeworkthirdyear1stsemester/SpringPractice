@@ -10,10 +10,13 @@
 <hr>
 
 <a href="hello/showForm">Hellow World form</a>
-
 <br><br>
 
-<img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
+<a href="student/showForm">Student form</a>
+<br><br>
+
+
+<img src="${pageContext.request.contextPath}/resources/images/spring-logo.png"/>
 
 <br><br>
 
