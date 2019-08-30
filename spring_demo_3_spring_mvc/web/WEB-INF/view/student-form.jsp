@@ -22,10 +22,9 @@
 
     Country:
     <form:select path="country">
-        <form:option value="Korea" label="Korea"/>
-        <form:option value="Brazil" label="Brazil"/>
-        <form:option value="Germany" label="Germany"/>
-        <form:option value="France" label="France"/>
+        <form:options items="${student.countryOptions}"/>
+        <!-- items에 get 함수로 호출하여서 해당 component에 있는 것들을 넣어준다 -->
+        <!-- collection에 있는 것만 해당 한다 -->
     </form:select>
     <br/><br/>
 
