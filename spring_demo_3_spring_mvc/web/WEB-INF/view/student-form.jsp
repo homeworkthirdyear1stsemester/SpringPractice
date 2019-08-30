@@ -28,6 +28,19 @@
     </form:select>
     <br/><br/>
 
+    Favorite Language :
+    Java <form:radiobutton path="favoriteLanguage" value="Java"/>
+    C++ <form:radiobutton path="favoriteLanguage" value="C++"/>
+    Python <form:radiobutton path="favoriteLanguage" value="Python"/>
+    JavaScript <form:radiobutton path="favoriteLanguage" value="JavaScript"/>
+    <br/><br/>
+
+    Operating System :
+    Linux <form:checkbox path="operatingSystem" value="Linux"/>
+    MS Windows <form:checkbox path="operatingSystem" value="MS Windows"/>
+    Mac OS <form:checkbox path="operatingSystem" value="Mac OS"/>
+    <br/><br/>
+
     <input type="submit" value="Submit"/>
 </form:form>
 <!-- path에 이름에 set을 mapping해서 넣어준다 -->
