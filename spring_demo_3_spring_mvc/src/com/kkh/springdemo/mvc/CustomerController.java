@@ -44,6 +44,7 @@ public class CustomerController {
             BindingResult theBindingResult) { // validation의 결과를 BindingResult에 넣어준다
 
         System.out.println("Last name : |" + theCustomer.getLastName() + "|");
+        System.out.println("Free Passes : |" + theCustomer.getFreePasses() + "|");
         System.out.println("Binding result: " + theBindingResult);
 
         if (theBindingResult.hasErrors()) {
