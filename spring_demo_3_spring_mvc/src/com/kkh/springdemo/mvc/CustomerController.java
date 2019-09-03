@@ -45,6 +45,7 @@ public class CustomerController {
 
         System.out.println("Last name : |" + theCustomer.getLastName() + "|");
         System.out.println("Free Passes : |" + theCustomer.getFreePasses() + "|");
+        System.out.println("Free Passes : |" + theCustomer.getPostalCode() + "|");
         System.out.println("Binding result: " + theBindingResult);
 
         if (theBindingResult.hasErrors()) {
