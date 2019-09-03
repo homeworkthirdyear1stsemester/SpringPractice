@@ -8,7 +8,8 @@ public class Customer {
     private String firstName;
 
     // 객체에 값 저장된후 다음 validation 할 때 필요
-    @NotNull @Size(min = 1, message = "is required") // add validation rule
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required") // add validation rule
     private String lastName;
 
     public String getFirstName() {
@@ -26,4 +27,5 @@ public class Customer {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
 }
