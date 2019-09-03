@@ -19,11 +19,13 @@ public class CustomerController {
     // remove leading and trailing whitespace
     // resolve issue for our validation
 
-    @InitBinder
+    @InitBinder // Valid annotaion 으로 검증이 필요한 객체를 가져오기 전에 수행 할 메소드
     public void initBinder(WebDataBinder dataBinder) {
 
+        // delete whilte space
         StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
 
+        // register on this data binder
         dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
     }
 
