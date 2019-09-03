@@ -6,8 +6,9 @@ import javax.validation.constraints.Size;
 public class Customer {
 
     private String firstName;
-    @NotNull(message = "is required")
-    @Size(min = 1) // add validation rule
+
+    // 객체에 값 저장된후 다음 validation 할 때 필요
+    @NotNull @Size(min = 1, message = "is required") // add validation rule
     private String lastName;
 
     public String getFirstName() {
