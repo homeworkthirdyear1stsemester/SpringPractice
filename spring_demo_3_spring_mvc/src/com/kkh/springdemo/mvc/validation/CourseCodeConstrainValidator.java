@@ -17,8 +17,10 @@ public class CourseCodeConstrainValidator
     public boolean isValid(String theCode,
                            ConstraintValidatorContext constraintValidatorContext) { // can place additional error messages
 
-        boolean result = theCode.startsWith(this.coursePrefix);
+        if (theCode != null) {
+            return theCode.startsWith(this.coursePrefix);
+        }
 
-        return result;
+        return true;
     }
 }
