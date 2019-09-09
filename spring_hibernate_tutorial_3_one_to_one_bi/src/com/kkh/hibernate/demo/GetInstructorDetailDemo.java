@@ -21,13 +21,11 @@ public class GetInstructorDetailDemo {
         Session session = factory.getCurrentSession();
 
         try {
-
             // start a transaction 거래 시작
             session.beginTransaction();
 
-
             // get the instructor detail object
-            int theId = 2;
+            int theId = 2999;
             InstructorDetail instructorDetail = session.get(InstructorDetail.class, theId);
 
             // print the instructor detail
@@ -40,7 +38,11 @@ public class GetInstructorDetailDemo {
             session.getTransaction().commit();
 
             System.out.println("Done!!!");
+        } catch (Exception exc) {
+            exc.printStackTrace();
         } finally {
+            // handle connect leak issue
+            session.close();
             factory.close();
         }
     }
