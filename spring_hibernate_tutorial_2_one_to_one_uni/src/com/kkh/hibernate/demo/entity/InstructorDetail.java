@@ -23,10 +23,10 @@ public class InstructorDetail {
     @Column(name = "id")
     private int id;
 
-    @Column(name = "youtube_channel")
+    @Column(name = "hobby")
     private String hobby;
 
-    @Column(name = "hobby")
+    @Column(name = "youtube_channel")
     private String youtubeChannel;
 
     public InstructorDetail() {
