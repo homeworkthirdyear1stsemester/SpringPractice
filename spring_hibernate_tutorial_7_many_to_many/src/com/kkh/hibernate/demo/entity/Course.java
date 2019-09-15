@@ -26,7 +26,7 @@ public class Course {
             cascade = {CascadeType.PERSIST, CascadeType.MERGE,
                     CascadeType.DETACH, CascadeType.REFRESH})
     @JoinTable(
-            name = "course_studnet",
+            name = "course_student",
             joinColumns = @JoinColumn(name = "course_id"), // 현재 객체 mapping되는 table column
             inverseJoinColumns = @JoinColumn(name = "student_id") //  list에 해당되는 객체가 mapping되는 table column
     )
